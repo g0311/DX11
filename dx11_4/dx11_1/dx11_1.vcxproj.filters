@@ -215,8 +215,8 @@
     <ClInclude Include="Animator.h">
       <Filter>소스 파일\00. Engine\Component\Animation</Filter>
     </ClInclude>
-    <ClInclude Include="CameraMove.h">
-      <Filter>소스 파일\01. Main</Filter>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>소스 파일\99. Headers\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -344,8 +344,8 @@
     <ClCompile Include="Animator.cpp">
       <Filter>소스 파일\00. Engine\Component\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="CameraMove.cpp">
-      <Filter>소스 파일\01. Main</Filter>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>소스 파일\99. Headers\Utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

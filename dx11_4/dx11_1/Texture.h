@@ -19,4 +19,3 @@ private:
 	ComPtr<ID3D11ShaderResourceView> _shaderResourceView;
 	Vec2 _size = { 0.f, 0.f };
 };
-

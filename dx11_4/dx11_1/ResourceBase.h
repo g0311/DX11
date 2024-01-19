@@ -35,7 +35,7 @@ protected:
 	virtual void Save(const wstring& path) {}
 	virtual void Load(const wstring& path) {}
 
-private:
+protected:
 	ResourceType _type = ResourceType::None;
 	wstring _name; //파일 이름
 	wstring _path; //파일 경로

@@ -1,4 +1,3 @@
-
 struct VS_INPUT
 {
 	float4 position : POSITION; //float4를 사용하는 이유: w를 통한 동차저 표기?

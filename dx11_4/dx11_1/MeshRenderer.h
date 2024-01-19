@@ -31,6 +31,4 @@ private:
 	shared_ptr<Mesh> _mesh;
 	//Material
 	shared_ptr<Material> _material;
-
 };
-
