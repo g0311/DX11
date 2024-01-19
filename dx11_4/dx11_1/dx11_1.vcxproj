@@ -96,6 +96,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Libraries/Include/</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -114,6 +115,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <AdditionalIncludeDirectories>$(SolutionDir)Libraries/Include/</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -130,6 +132,7 @@
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Libraries/Include/</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -146,6 +149,7 @@
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Libraries/Include/</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -159,8 +163,11 @@
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Animator.h" />
     <ClInclude Include="BlendState.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraMove.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="ConstantBuffer.h" />
     <ClInclude Include="dx11_1.h" />
@@ -172,18 +179,29 @@
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="InputLayout.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="MeshRenderer.h" />
     <ClInclude Include="MonoBehaviour.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Pipeline.h" />
     <ClInclude Include="RasterizerState.h" />
+    <ClInclude Include="RenderHelper.h" />
+    <ClInclude Include="RenderManager.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResourceBase.h" />
+    <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SamplerState.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderBase.h" />
     <ClInclude Include="SimpleMath.h" />
     <ClInclude Include="Struct.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="TimeManager.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Types.h" />
     <ClInclude Include="Values.h" />
@@ -191,8 +209,11 @@
     <ClInclude Include="VertexData.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Animator.cpp" />
     <ClCompile Include="BlendState.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraMove.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="ConstantBuffer.cpp" />
     <ClCompile Include="dx11_1.cpp" />
@@ -203,6 +224,9 @@
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="InputLayout.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="MeshRenderer.cpp" />
     <ClCompile Include="MonoBehaviour.cpp" />
     <ClCompile Include="pch.cpp">
@@ -211,10 +235,18 @@
     </ClCompile>
     <ClCompile Include="Pipeline.cpp" />
     <ClCompile Include="RasterizerState.cpp" />
+    <ClCompile Include="RenderHelper.cpp" />
+    <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="ResourceBase.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SamplerState.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderBase.cpp" />
     <ClCompile Include="SimpleMath.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="VertexBuffer.cpp" />
     <ClCompile Include="VertexData.cpp" />

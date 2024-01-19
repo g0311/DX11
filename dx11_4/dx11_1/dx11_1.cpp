@@ -46,8 +46,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     // 단축키 기능 //안씀 HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_DX111));
 
-    Game game;
-    game.init(hWnd);
+    GAME->init(hWnd);
 
     MSG msg = {};
     // 기본 메시지 루프입니다:
@@ -61,8 +60,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         }
         else
         {
-            game.Update();
-            game.Render();
+            GAME->Update();
+            GAME->Render();
         }
         /*
         if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))

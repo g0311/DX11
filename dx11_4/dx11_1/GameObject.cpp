@@ -3,6 +3,7 @@
 #include "MonoBehaviour.h"
 #include "Camera.h"
 #include "MeshRenderer.h"
+#include "Animator.h"
 
 GameObject::GameObject(ComPtr<ID3D11Device> device, ComPtr<ID3D11DeviceContext> deviceContext) 
 	: _device(device)
@@ -40,7 +41,7 @@ void GameObject::Start()
 }
 
 void GameObject::Update()
-{//_transform, _parent : transform
+{//_transform, _parent :: transform
 	for (shared_ptr<Component>& component : _components)
 	{
 		if(component)
@@ -111,6 +112,12 @@ shared_ptr<MeshRenderer> GameObject::GetMeshRenderer()
 {
 	shared_ptr<Component> component = GetFixedComponent(ComponentType::MeshRenderer);
 	return static_pointer_cast<MeshRenderer>(component);
+}
+
+shared_ptr<Animator> GameObject::GetAnimator()
+{
+	shared_ptr<Component> component = GetFixedComponent(ComponentType::Animator);
+	return static_pointer_cast<Animator>(component);
 }
 
 void GameObject::AddComponent(shared_ptr<Component> component)

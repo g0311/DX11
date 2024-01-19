@@ -13,10 +13,10 @@ Component::~Component()
 
 shared_ptr<GameObject> Component::GetGameObject()
 {
-	return _monster.lock();
+	return _gameObject.lock();
 }
 
 shared_ptr<Transform> Component::GetTransform()
 {
-	return _monster.lock()->GetTransform();
+	return _gameObject.lock()->GetTransform();
 }

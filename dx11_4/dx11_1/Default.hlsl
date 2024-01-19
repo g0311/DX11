@@ -26,6 +26,14 @@ cbuffer TransformData : register(b1)
 	//row_major?? 행우선?
 }
 
+cbuffer AnimationData : register(b2)
+{
+	float2 spriteOffset;
+	float2 spriteSize;
+	float2 textureSize;
+	float useAnimation;
+}
+
 //IA - <VS> - RS - PS - OM
 VS_OUTPUT VS(VS_INPUT input) //c++ 함수랑 똑같음
 {
@@ -38,6 +46,13 @@ VS_OUTPUT VS(VS_INPUT input) //c++ 함수랑 똑같음
 	output.position = position;// +offset;//offset 추가 (input 데이터가 변하는 것이 아님)
 	output.uv = input.uv;
 
+	if (useAnimation == 1.0f)
+	{
+		//전체 1000, 500만 그린다 
+		output.uv *= spriteSize / textureSize;
+		output.uv += spriteOffset / textureSize;
+	}
+
 	return output;
 }
 //정점 단위 실행
@@ -45,13 +60,12 @@ VS_OUTPUT VS(VS_INPUT input) //c++ 함수랑 똑같음
 //위치 관련 변환
 
 Texture2D texture0 : register(t0);
-Texture2D texture1 : register(t1);
 SamplerState sampler0 : register(s0);
 //cpu가 해줌 저수준 작업인듯?
 
 float4 PS(VS_OUTPUT input) : SV_Target
 {
-	float4 color = texture1.Sample(sampler0, input.uv);
+	float4 color = texture0.Sample(sampler0, input.uv);
 	
 	//텍스쳐 0의 uv좌표를 통해 해당 픽셀 색상값 가져오기 
 	return color;

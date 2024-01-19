@@ -39,7 +39,15 @@ using namespace Microsoft::WRL;
 #pragma comment(lib, "DirectXTex\\DirectXTex.lib")
 #endif // _DEBUG
 
-#define CHECK(p) assert(SUCCEEDED(p));
+#define CHECK(p) assert(SUCCEEDED(p))
+
+#define GAME  GGame
+
+#define SCENE GAME->GetSceneManager()
+#define TIME GAME->GetTimeManager()
+#define INPUT GAME->GetInputManager()
+#define RESOURCES GAME->GetResourceManager()
+#define RENDER GAME->GetRenderManager()
 
 //Engine
 #include "Graphics.h"
@@ -49,7 +57,7 @@ using namespace Microsoft::WRL;
 #include "Geometry.h"
 #include "GeometryHelper.h"
 #include "VertexData.h"
-#include "Shader.h"
+#include "ShaderBase.h"
 #include "ConstantBuffer.h"
 #include "Texture.h"
 #include "RasterizerState.h"

@@ -63,6 +63,27 @@
     <Filter Include="소스 파일\00. Engine\Component\Rendering">
       <UniqueIdentifier>{06fcab0d-52ae-4e75-9e21-9212f03f4cda}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\00. Engine\Manager">
+      <UniqueIdentifier>{7c512eb5-7182-4e30-bf32-15a2a75d1b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00. Engine\Manager\Input">
+      <UniqueIdentifier>{f79a505f-0530-48a8-b25e-7d53b69e91a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00. Engine\Manager\Time">
+      <UniqueIdentifier>{129ef2a5-ef74-47d4-a357-0baf2f30d559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00. Engine\Manager\Scene">
+      <UniqueIdentifier>{5b9e17f7-8062-4181-a6ed-c7d3ca45481b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00. Engine\Manager\Resource">
+      <UniqueIdentifier>{311932aa-3ca6-4364-9b25-509f1760c66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00. Engine\Resource">
+      <UniqueIdentifier>{650e1db6-dae4-4904-92d9-de9a30441231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00. Engine\Manager\Render">
+      <UniqueIdentifier>{a5a44811-d5e3-42a5-b796-a89ff9116bc4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -116,14 +137,8 @@
     <ClInclude Include="VertexData.h">
       <Filter>소스 파일\00. Engine\Pipeline\00. Geometry</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.h">
-      <Filter>소스 파일\00. Engine\Pipeline\02. VertexShader</Filter>
-    </ClInclude>
     <ClInclude Include="ConstantBuffer.h">
       <Filter>소스 파일\00. Engine\Pipeline\02. VertexShader</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>소스 파일\00. Engine\Pipeline\04. PixelShader</Filter>
     </ClInclude>
     <ClInclude Include="RasterizerState.h">
       <Filter>소스 파일\00. Engine\Pipeline\03. Rasterizer</Filter>
@@ -154,6 +169,54 @@
     </ClInclude>
     <ClInclude Include="MeshRenderer.h">
       <Filter>소스 파일\00. Engine\Component\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\00. Engine\Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>소스 파일\00. Engine\Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>소스 파일\00. Engine\Manager\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>소스 파일\00. Engine\Manager\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>소스 파일\00. Engine\Manager\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceBase.h">
+      <Filter>소스 파일\00. Engine\Manager\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderBase.h">
+      <Filter>소스 파일\00. Engine\Pipeline\02. VertexShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>소스 파일\00. Engine\Manager\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHelper.h">
+      <Filter>소스 파일\00. Engine\Manager\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>소스 파일\00. Engine\Component\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraMove.h">
+      <Filter>소스 파일\01. Main</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -203,14 +266,8 @@
     <ClCompile Include="VertexData.cpp">
       <Filter>소스 파일\00. Engine\Pipeline\00. Geometry</Filter>
     </ClCompile>
-    <ClCompile Include="Shader.cpp">
-      <Filter>소스 파일\00. Engine\Pipeline\02. VertexShader</Filter>
-    </ClCompile>
     <ClCompile Include="ConstantBuffer.cpp">
       <Filter>소스 파일\00. Engine\Pipeline\02. VertexShader</Filter>
-    </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>소스 파일\00. Engine\Pipeline\04. PixelShader</Filter>
     </ClCompile>
     <ClCompile Include="RasterizerState.cpp">
       <Filter>소스 파일\00. Engine\Pipeline\03. Rasterizer</Filter>
@@ -241,6 +298,54 @@
     </ClCompile>
     <ClCompile Include="MeshRenderer.cpp">
       <Filter>소스 파일\00. Engine\Component\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\00. Engine\Manager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\00. Engine\Manager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>소스 파일\00. Engine\Manager\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>소스 파일\00. Engine\Manager\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceBase.cpp">
+      <Filter>소스 파일\00. Engine\Manager\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>소스 파일\00. Engine\Manager\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderBase.cpp">
+      <Filter>소스 파일\00. Engine\Pipeline\02. VertexShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>소스 파일\00. Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>소스 파일\00. Engine\Manager\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderHelper.cpp">
+      <Filter>소스 파일\00. Engine\Manager\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>소스 파일\00. Engine\Component\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraMove.cpp">
+      <Filter>소스 파일\01. Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
