@@ -1,0 +1,31 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(C:\Users\user\source\repos\dx11_2\Intermediate\Debug\)에 다른 프로젝트(Client.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  C:\Users\user\source\repos\dx11_2\Engine\ConstantBuffer.h
+  C:\Users\user\source\repos\dx11_2\Engine\Define.h
+  C:\Users\user\source\repos\dx11_2\Engine\EnginePch.h
+  C:\Users\user\source\repos\dx11_2\Engine\Game.h
+  C:\Users\user\source\repos\dx11_2\Engine\Geometry.h
+  C:\Users\user\source\repos\dx11_2\Engine\GeometryHelper.h
+  C:\Users\user\source\repos\dx11_2\Engine\Graphics.h
+  C:\Users\user\source\repos\dx11_2\Engine\IExecute.h
+  C:\Users\user\source\repos\dx11_2\Engine\IndexBuffer.h
+  C:\Users\user\source\repos\dx11_2\Engine\InputManager.h
+  C:\Users\user\source\repos\dx11_2\Engine\Pass.h
+  C:\Users\user\source\repos\dx11_2\Engine\pch.h
+  C:\Users\user\source\repos\dx11_2\Engine\ResourceBase.h
+  C:\Users\user\source\repos\dx11_2\Engine\ResourceManager.h
+  C:\Users\user\source\repos\dx11_2\Engine\Shader.h
+  C:\Users\user\source\repos\dx11_2\Engine\SimpleMath.h
+  C:\Users\user\source\repos\dx11_2\Engine\Technique.h
+  C:\Users\user\source\repos\dx11_2\Engine\Texture.h
+  C:\Users\user\source\repos\dx11_2\Engine\TimeManager.h
+  C:\Users\user\source\repos\dx11_2\Engine\tinyxml2.h
+  C:\Users\user\source\repos\dx11_2\Engine\Types.h
+  C:\Users\user\source\repos\dx11_2\Engine\Utils.h
+  C:\Users\user\source\repos\dx11_2\Engine\VertexBuffer.h
+  C:\Users\user\source\repos\dx11_2\Engine\VertexData.h
+  24개 파일이 복사되었습니다.
+  C:\Users\user\source\repos\dx11_2\Engine\SimpleMath.inl
+  1개 파일이 복사되었습니다.
+  GeometryHelper.cpp
+  Engine.vcxproj -> C:\Users\user\source\repos\dx11_2\Libraries\Lib\Engine\Engine.lib
