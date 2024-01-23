@@ -1,15 +1,21 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(C:\Users\user\source\repos\dx11_2\Intermediate\Debug\)에 다른 프로젝트(Client.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  C:\Users\user\source\repos\dx11_2\Engine\Camera.h
+  C:\Users\user\source\repos\dx11_2\Engine\Component.h
   C:\Users\user\source\repos\dx11_2\Engine\ConstantBuffer.h
   C:\Users\user\source\repos\dx11_2\Engine\Define.h
   C:\Users\user\source\repos\dx11_2\Engine\EnginePch.h
   C:\Users\user\source\repos\dx11_2\Engine\Game.h
+  C:\Users\user\source\repos\dx11_2\Engine\GameObject.h
   C:\Users\user\source\repos\dx11_2\Engine\Geometry.h
   C:\Users\user\source\repos\dx11_2\Engine\GeometryHelper.h
   C:\Users\user\source\repos\dx11_2\Engine\Graphics.h
   C:\Users\user\source\repos\dx11_2\Engine\IExecute.h
   C:\Users\user\source\repos\dx11_2\Engine\IndexBuffer.h
   C:\Users\user\source\repos\dx11_2\Engine\InputManager.h
+  C:\Users\user\source\repos\dx11_2\Engine\Mesh.h
+  C:\Users\user\source\repos\dx11_2\Engine\MeshRenderer.h
+  C:\Users\user\source\repos\dx11_2\Engine\MonoBehaviour.h
   C:\Users\user\source\repos\dx11_2\Engine\Pass.h
   C:\Users\user\source\repos\dx11_2\Engine\pch.h
   C:\Users\user\source\repos\dx11_2\Engine\ResourceBase.h
@@ -20,12 +26,100 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\
   C:\Users\user\source\repos\dx11_2\Engine\Texture.h
   C:\Users\user\source\repos\dx11_2\Engine\TimeManager.h
   C:\Users\user\source\repos\dx11_2\Engine\tinyxml2.h
+  C:\Users\user\source\repos\dx11_2\Engine\Transform.h
   C:\Users\user\source\repos\dx11_2\Engine\Types.h
   C:\Users\user\source\repos\dx11_2\Engine\Utils.h
   C:\Users\user\source\repos\dx11_2\Engine\VertexBuffer.h
   C:\Users\user\source\repos\dx11_2\Engine\VertexData.h
-  24개 파일이 복사되었습니다.
+  31개 파일이 복사되었습니다.
   C:\Users\user\source\repos\dx11_2\Engine\SimpleMath.inl
   1개 파일이 복사되었습니다.
+  pch.cpp
+C:\Users\user\source\repos\dx11_2\Engine\ResourceBase.h(5,2): warning C4309: '초기화 중': 상수 값이 잘립니다.
+C:\Users\user\source\repos\dx11_2\Engine\ResourceBase.h(5,11): warning C4369: 'ResourceType::None':  열거자 값 '-1'을(를) 'unsigned char'(으)로 나타낼 수 없습니다. 값은 '255'입니다.
+C:\Users\user\source\repos\dx11_2\Engine\ResourceBase.h(6,6): warning C4340: 'Mesh': 양의 값에서 음의 값으로 값이 래핑되었습니다.
+C:\Users\user\source\repos\dx11_2\Engine\ResourceBase.h(6,2): warning C4309: '초기화 중': 상수 값이 잘립니다.
+C:\Users\user\source\repos\dx11_2\Engine\ResourceBase.h(6,6): warning C4369: 'ResourceType::Mesh':  열거자 값 '256'을(를) 'unsigned char'(으)로 나타낼 수 없습니다. 값은 '0'입니다.
+  Camera.cpp
+  Component.cpp
+  ConstantBuffer.cpp
+  Game.cpp
+C:\Users\user\source\repos\dx11_2\Engine\Game.cpp(66,33): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\user\source\repos\dx11_2\Engine\Game.cpp(66,33): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\dx11_2\Engine\Game.cpp(66,46): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\user\source\repos\dx11_2\Engine\Game.cpp(66,46): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GameObject.cpp
+  Geometry.cpp
   GeometryHelper.cpp
+  Graphics.cpp
+C:\Users\user\source\repos\dx11_2\Engine\Graphics.cpp(30,46): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\dx11_2\Engine\Graphics.cpp(31,47): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  IExecute.cpp
+  IndexBuffer.cpp
+  InputManager.cpp
+  Mesh.cpp
+  MeshRenderer.cpp
+  MonoBehaviour.cpp
+  Pass.cpp
+  ResourceBase.cpp
+  ResourceManager.cpp
+  Shader.cpp
+C:\Users\user\source\repos\dx11_2\Engine\Shader.cpp(166,3): warning C4267: '인수': 'size_t'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SimpleMath.cpp
+  Technique.cpp
+  코드를 생성하고 있습니다...
+C:\Users\user\source\repos\dx11_2\Engine\Game.cpp(94): warning C4715: 'Game::WndProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  컴파일하고 있습니다...
+  Texture.cpp
+C:\Users\user\source\repos\dx11_2\Engine\Texture.cpp(23,14): warning C4244: '=': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\dx11_2\Engine\Texture.cpp(24,14): warning C4244: '=': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TimeManager.cpp
+  Transform.cpp
+C:\Users\user\source\repos\dx11_2\Engine\Transform.cpp(29,23): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\dx11_2\Engine\Transform.cpp(34,40): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\dx11_2\Engine\Transform.cpp(39,23): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Utils.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2541,23): warning C4244: '인수': 'wchar_t'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2552): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2552): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2532): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2532): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Users\user\source\repos\dx11_2\Engine\Utils.cpp(29): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\user\source\repos\dx11_2\Engine\Utils.cpp(29): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+  VertexBuffer.cpp
+  VertexData.cpp
+  코드를 생성하고 있습니다...
+  tinyxml2.cpp
   Engine.vcxproj -> C:\Users\user\source\repos\dx11_2\Libraries\Lib\Engine\Engine.lib

@@ -1,13 +1,54 @@
-c:\users\user\source\repos\dx11_2\intermediate\debug\client.pch
 c:\users\user\source\repos\dx11_2\intermediate\debug\vc142.pdb
 c:\users\user\source\repos\dx11_2\intermediate\debug\vc142.idb
-c:\users\user\source\repos\dx11_2\intermediate\debug\pch.obj
-c:\users\user\source\repos\dx11_2\intermediate\debug\main.obj
 c:\users\user\source\repos\dx11_2\intermediate\debug\01. triangledemo.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\main.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\camerascript.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\06. samplingdemo.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\05. texturedemo.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\04. camerademo.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\03. constbufferdemo.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\02. quaddemo.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\client.pch
+c:\users\user\source\repos\dx11_2\intermediate\debug\pch.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\07. heightmapdemo.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\08. normaldemo.obj
 c:\users\user\source\repos\dx11_2\binaries\01. triangle.cso
+c:\users\user\source\repos\dx11_2\binaries\02. quad.cso
+c:\users\user\source\repos\dx11_2\binaries\03. constbuffer.cso
+c:\users\user\source\repos\dx11_2\binaries\04. texture.cso
+c:\users\user\source\repos\dx11_2\binaries\05. sampler.cso
+c:\users\user\source\repos\dx11_2\binaries\06. terrain.cso
+c:\users\user\source\repos\dx11_2\binaries\07. normal.cso
 c:\users\user\source\repos\dx11_2\binaries\client.exe
 c:\users\user\source\repos\dx11_2\intermediate\debug\client.ilk
 c:\users\user\source\repos\dx11_2\binaries\client.pdb
+c:\users\user\source\repos\dx11_2\intermediate\debug\camera.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\component.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\constantbuffer.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\game.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\gameobject.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\geometry.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\geometryhelper.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\graphics.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\iexecute.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\indexbuffer.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\inputmanager.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\mesh.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\monobehaviour.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\pass.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\resourcebase.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\resourcemanager.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\shader.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\simplemath.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\technique.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\texture.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\timemanager.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\tinyxml2.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\transform.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\utils.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\vertexbuffer.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\vertexdata.obj
+c:\users\user\source\repos\dx11_2\intermediate\debug\engine.pch
 c:\users\user\source\repos\dx11_2\intermediate\debug\client.tlog\cl.command.1.tlog
 c:\users\user\source\repos\dx11_2\intermediate\debug\client.tlog\cl.read.1.tlog
 c:\users\user\source\repos\dx11_2\intermediate\debug\client.tlog\cl.write.1.tlog

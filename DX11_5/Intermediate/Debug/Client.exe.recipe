@@ -15,6 +15,18 @@
     <ContentFile>
       <FullPath>C:\Users\user\source\repos\dx11_2\Binaries\03. ConstBuffer.cso</FullPath>
     </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\dx11_2\Binaries\04. Texture.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\dx11_2\Binaries\05. Sampler.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\dx11_2\Binaries\06. Terrain.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\dx11_2\Binaries\07. Normal.cso</FullPath>
+    </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />

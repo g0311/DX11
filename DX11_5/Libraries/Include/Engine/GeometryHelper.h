@@ -5,8 +5,16 @@
 class GeometryHelper
 {
 public:
+	//사각형, 큐브, 구, 그리드, 실린더
 	static void CreateQuad(shared_ptr<Geometry<VertexColorData>> geometry, Color color);
-private:
-
+	
+	static void CreateQuad(shared_ptr<Geometry<VertexTextureData>> geometry);
+	static void CreateCube(shared_ptr<Geometry<VertexTextureData>> geometry);
+	static void CreateSphere(shared_ptr<Geometry<VertexTextureData>> geometry);
+	static void CreateGrid(shared_ptr<Geometry<VertexTextureData>> geometry, int32 sizeX, int32 sizeZ);
+	
+	static void CreateQuad(shared_ptr<Geometry<VertexTextureNormalData>> geometry);
+	static void CreateCube(shared_ptr<Geometry<VertexTextureNormalData>> geometry);
+	static void CreateSphere(shared_ptr<Geometry<VertexTextureNormalData>> geometry);
+	static void CreateGrid(shared_ptr<Geometry<VertexTextureNormalData>> geometry, int32 sizeX, int32 sizeZ);
 };
-
