@@ -1,3 +1,44 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(C:\Users\user\source\repos\DX\dx11_2\Intermediate\Debug\)에 다른 프로젝트(Engine.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  pch.cpp
+C:\Users\user\source\repos\DX\dx11_2\Libraries\Include\Engine\ResourceBase.h(5,2): warning C4309: '초기화 중': 상수 값이 잘립니다.
+C:\Users\user\source\repos\DX\dx11_2\Libraries\Include\Engine\ResourceBase.h(5,11): warning C4369: 'ResourceType::None':  열거자 값 '-1'을(를) 'unsigned char'(으)로 나타낼 수 없습니다. 값은 '255'입니다.
+C:\Users\user\source\repos\DX\dx11_2\Libraries\Include\Engine\ResourceBase.h(6,6): warning C4340: 'Mesh': 양의 값에서 음의 값으로 값이 래핑되었습니다.
+C:\Users\user\source\repos\DX\dx11_2\Libraries\Include\Engine\ResourceBase.h(6,2): warning C4309: '초기화 중': 상수 값이 잘립니다.
+C:\Users\user\source\repos\DX\dx11_2\Libraries\Include\Engine\ResourceBase.h(6,6): warning C4369: 'ResourceType::Mesh':  열거자 값 '256'을(를) 'unsigned char'(으)로 나타낼 수 없습니다. 값은 '0'입니다.
+  01. TriangleDemo.cpp
+  02. QuadDemo.cpp
+  03. ConstBufferDemo.cpp
+  04. CameraDemo.cpp
+  05. TextureDemo.cpp
+  06. SamplingDemo.cpp
+  07. HeightMapDemo.cpp
+C:\Users\user\source\repos\DX\dx11_2\Client\07. HeightMapDemo.cpp(15,43): warning C4244: '초기화 중': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Client\07. HeightMapDemo.cpp(15,20): warning C4244: '초기화 중': 'float'에서 'const int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Client\07. HeightMapDemo.cpp(16,44): warning C4244: '초기화 중': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Client\07. HeightMapDemo.cpp(16,21): warning C4244: '초기화 중': 'float'에서 'const int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Client\07. HeightMapDemo.cpp(34,18): warning C4244: '초기화 중': 'float'에서 'uint8'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  08. NormalDemo.cpp
+  09. MeshDemo.cpp
+  10. GlobalTestDemo.cpp
+  11. DepthStencilDemo.cpp
+  12. AmbientDemo.cpp
+  13. DiffuseDemo.cpp
+  14. SpecularDemo.cpp
+  15. EmissiveDemo.cpp
   16. LightingDemo.cpp
+  17. MaterialDemo.cpp
+  18. NormalMappingDemo.cpp
+  CameraScript.cpp
+  Main.cpp
+  코드를 생성하고 있습니다...
+DirectXTex_debug.lib(BC.obj) : warning LNK4099: 'DirectXTex.pdb' PDB를 'DirectXTex_debug.lib(BC.obj)' 또는 'C:\Users\user\source\repos\DX\dx11_2\Binaries\DirectXTex.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(BC4BC5.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(BC4BC5.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(BC6HBC7.obj) : warning LNK4099: 'DirectXTex.pdb' PDB를 'DirectXTex_debug.lib(BC6HBC7.obj)' 또는 'C:\Users\user\source\repos\DX\dx11_2\Binaries\DirectXTex.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexCompress.obj) : warning LNK4099: 'DirectXTex.pdb' PDB를 'DirectXTex_debug.lib(DirectXTexCompress.obj)' 또는 'C:\Users\user\source\repos\DX\dx11_2\Binaries\DirectXTex.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexConvert.obj) : warning LNK4099: 'DirectXTex.pdb' PDB를 'DirectXTex_debug.lib(DirectXTexConvert.obj)' 또는 'C:\Users\user\source\repos\DX\dx11_2\Binaries\DirectXTex.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexD3D11.obj) : warning LNK4099: 'DirectXTex.pdb' PDB를 'DirectXTex_debug.lib(DirectXTexD3D11.obj)' 또는 'C:\Users\user\source\repos\DX\dx11_2\Binaries\DirectXTex.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexImage.obj) : warning LNK4099: 'DirectXTex.pdb' PDB를 'DirectXTex_debug.lib(DirectXTexImage.obj)' 또는 'C:\Users\user\source\repos\DX\dx11_2\Binaries\DirectXTex.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexMipMaps.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(DirectXTexMipMaps.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexUtil.obj) : warning LNK4099: 'DirectXTex.pdb' PDB를 'DirectXTex_debug.lib(DirectXTexUtil.obj)' 또는 'C:\Users\user\source\repos\DX\dx11_2\Binaries\DirectXTex.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexWIC.obj) : warning LNK4099: 'DirectXTex.pdb' PDB를 'DirectXTex_debug.lib(DirectXTexWIC.obj)' 또는 'C:\Users\user\source\repos\DX\dx11_2\Binaries\DirectXTex.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
   Client.vcxproj -> C:\Users\user\source\repos\DX\dx11_2\Binaries\Client.exe

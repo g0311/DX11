@@ -106,4 +106,22 @@ float4 ComputeLight(float3 normal, float2 uv, float3 worldPosition)
 	return ambientColor + diffuseColor + specularColor + emissiveColor;
 }
 
+void ComputeNormalMapping(inout float3 normal, float3 tangent, float2 uv) //inout >> 아웃매개변수
+{
+	//[0, 255] >> [0, 1] 변환
+	float4 map = NormalMap.Sample(LinearSampler, uv);
+	if (any(map.rgb) == false) //000이라 정보 없을 때
+		return;
+	
+	float3 N = normalize(normal);//z
+	float3 T = normalize(tangent);//x
+	float3 B = normalize(cross(N, T));//y
+	float3x3 TBN = float3x3(T, B, N); //탄젠트 >> 월드 스페이스로 가는 변환행렬
+	
+	//[0, 1] >> [-1, 1] 변환
+	float3 tangentNormalVector = (map.rgb * 2.0f - 1.0f);
+	
+	float3 worldNormal = mul(tangentNormalVector, TBN);
+	normal = worldNormal;
+}
 #endif

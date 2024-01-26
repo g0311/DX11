@@ -17,6 +17,8 @@
 #include "14. SpecularDemo.h"
 #include "15. EmissiveDemo.h"
 #include "16. LightingDemo.h"
+#include "17. MaterialDemo.h"
+#include "18. NormalMappingDemo.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
 {
@@ -28,7 +30,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	desc.width = 800;
 	desc.height = 600;
 	desc.clearColor = Color(0.f, 0.f, 0.f, 0.f);
-	desc.app = make_shared<LightingDemo>();
+	desc.app = make_shared<NormalMappingDemo>();
 
 	GAME->Run(desc);
 

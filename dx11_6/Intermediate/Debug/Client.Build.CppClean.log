@@ -20,8 +20,8 @@ c:\users\user\source\repos\dx\dx11_2\intermediate\debug\05. texturedemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\04. camerademo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\03. constbufferdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\02. quaddemo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\17. materialdemo.obj
 c:\users\user\source\repos\dx\dx11_2\binaries\00. global.cso
-c:\users\user\source\repos\dx\dx11_2\binaries\00. light.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\01. triangle.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\02. quad.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\03. constbuffer.cso
@@ -34,9 +34,10 @@ c:\users\user\source\repos\dx\dx11_2\binaries\09. lighting_ambient.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\10. lighting_diffuse.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\11. lighting_specular.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\12. lighting_emissive.cso
+c:\users\user\source\repos\dx\dx11_2\binaries\00. light.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\13. lighting.cso
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\client.ilk
 c:\users\user\source\repos\dx\dx11_2\binaries\client.exe
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\client.ilk
 c:\users\user\source\repos\dx\dx11_2\binaries\client.pdb
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\camera.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\component.obj
@@ -49,6 +50,7 @@ c:\users\user\source\repos\dx\dx11_2\intermediate\debug\graphics.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\iexecute.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\indexbuffer.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\inputmanager.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\material.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\mesh.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\meshrenderer.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\monobehaviour.obj

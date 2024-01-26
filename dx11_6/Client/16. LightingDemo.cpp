@@ -57,7 +57,6 @@ void LightingDemo::Update()
 {
 	_camera->Update();
 	RENDER->Update(); //카메라 버퍼 업데이트
-
 	{
 		LightDesc lightDesc;
 		lightDesc.ambient = Vec4(0.5f);

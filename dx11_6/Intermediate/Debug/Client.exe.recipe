@@ -51,6 +51,9 @@
     <ContentFile>
       <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\13. Lighting.cso</FullPath>
     </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\14. NormalMapping.cso</FullPath>
+    </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />
