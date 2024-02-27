@@ -36,6 +36,15 @@
     <ClCompile Include="ImGuiDemo.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="AnimationDemo.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="TweenDemo.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyDemo.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -60,6 +69,15 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="ImGuiDemo.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDemo.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="TweenDemo.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyDemo.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>

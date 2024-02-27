@@ -56,7 +56,6 @@ struct asBlendWeight
 	Vec4 weights = Vec4(0, 0, 0, 0);
 };
 
-
 //정점마다 -> 뼈 번호, 가중치
 struct asBoneWeights
 {
@@ -72,7 +71,7 @@ struct asBoneWeights
 		boneWeights.insert(findIt, Pair(boneindex, weight));
 	}
 
-	asBlendWeight GetBlendWeight()
+	asBlendWeight GetBlendWeights()
 	{
 		asBlendWeight blendWeights;
 
@@ -106,4 +105,37 @@ struct asBoneWeights
 	using Pair = pair<int32, float>;
 	vector<Pair> boneWeights;
 	//모든 가중치 받아 저장 후 정렬 그다음 필요한 거만 사용 (앞에 4개)
+};
+
+struct asKeyframeData
+{
+	float time;
+	Vec3 scale;
+	Quaternion rotation;
+	Vec3 translation;
+};
+
+struct asKeyframe
+{
+	string boneName;
+	vector<asKeyframeData> transforms;//키 프레임 개수
+};
+
+struct asAnimation
+{
+	string name;
+	uint32 frameCount; //몇 프레임?
+	float frameRate; //프레임 주기? //30 >> 1초에 30번 움직일거
+	float duration; //애니메이션 길이
+
+	vector<shared_ptr<asKeyframe>> keyframes; 
+	//매 프레임마다 어떻게 이동할거?
+	//뼈다구 개수만큼 가짐
+};
+
+//cache
+struct asAnimationNode //애니메이션의 모든 키 프레임 가짐
+{
+	aiString name;
+	vector<asKeyframeData> keyframe;
 };

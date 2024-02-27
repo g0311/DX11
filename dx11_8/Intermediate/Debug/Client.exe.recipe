@@ -57,6 +57,12 @@
     <ContentFile>
       <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\15. ModelDemo.cso</FullPath>
     </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\16. AnimationDemo.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\17 TweenDemo.cso</FullPath>
+    </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />

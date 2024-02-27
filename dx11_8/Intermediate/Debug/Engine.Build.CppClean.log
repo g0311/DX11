@@ -1,18 +1,17 @@
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\engine.pch
 c:\users\user\source\repos\dx\dx11_2\libraries\lib\engine\engine.pdb
 c:\users\user\source\repos\dx\dx11_2\libraries\lib\engine\engine.idb
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\tinyxml2.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\engine.pch
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\pch.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\pass.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\monobehaviour.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelrenderer.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelmesh.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelanimator.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelanimation.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\model.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\meshrenderer.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\mesh.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\material.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\inputmanager.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\indexbuffer.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imguimanager.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\iexecute.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\graphics.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\geometryhelper.obj
@@ -35,34 +34,28 @@ c:\users\user\source\repos\dx\dx11_2\intermediate\debug\shader.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\resourcemanager.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\resourcebase.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\rendermanager.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\pass.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\monobehaviour.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelrenderer.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\tinyxml2.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui_widgets.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui_tables.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui_impl_win32.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui_impl_dx11.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui_draw.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui_demo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui.obj
 c:\users\user\source\repos\dx\dx11_2\libraries\lib\engine\engine.lib
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\01. triangledemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\02. quaddemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\03. constbufferdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\04. camerademo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\05. texturedemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\06. samplingdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\07. heightmapdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\08. normaldemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\09. meshdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\10. globaltestdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\11. depthstencildemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\12. ambientdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\13. diffusedemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\14. speculardemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\15. emissivedemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\16. lightingdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\17. materialdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\18. normalmappingdemo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\animationdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\assimptool.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\astypes.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\camerascript.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\converter.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imguidemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\main.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\staticmeshdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\client.ilk
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\assimptool.ilk
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\assimptool.pch
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\client.pch
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\vc142.idb
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\vc142.pdb
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\engine.tlog\cl.command.1.tlog

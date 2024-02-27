@@ -27,6 +27,8 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\
   C:\Users\user\source\repos\DX\dx11_2\Engine\Mesh.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\MeshRenderer.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Model.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\ModelAnimation.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\ModelAnimator.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\ModelMesh.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\ModelRenderer.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\MonoBehaviour.h
@@ -46,7 +48,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\
   C:\Users\user\source\repos\DX\dx11_2\Engine\Utils.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\VertexBuffer.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\VertexData.h
-  46개 파일이 복사되었습니다.
+  48개 파일이 복사되었습니다.
   C:\Users\user\source\repos\DX\dx11_2\Engine\SimpleMath.inl
   1개 파일이 복사되었습니다.
   pch.cpp
@@ -78,12 +80,17 @@ C:\Users\user\source\repos\DX\dx11_2\Engine\Graphics.cpp(35,47): warning C4244: 
   Mesh.cpp
   MeshRenderer.cpp
   Model.cpp
+C:\Users\user\source\repos\DX\dx11_2\Engine\Model.h(28,29): warning C4267: 'return': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ModelAnimation.cpp
+  ModelAnimator.cpp
+C:\Users\user\source\repos\DX\dx11_2\Engine\Model.h(28,29): warning C4267: 'return': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   ModelMesh.cpp
-  ModelRenderer.cpp
-  MonoBehaviour.cpp
   코드를 생성하고 있습니다...
 C:\Users\user\source\repos\DX\dx11_2\Engine\Game.cpp(100): warning C4715: 'Game::WndProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
   컴파일하고 있습니다...
+  ModelRenderer.cpp
+C:\Users\user\source\repos\DX\dx11_2\Engine\Model.h(28,29): warning C4267: 'return': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MonoBehaviour.cpp
   Pass.cpp
   RenderManager.cpp
   ResourceBase.cpp
@@ -142,5 +149,14 @@ C:\Users\user\source\repos\DX\dx11_2\Engine\Utils.cpp(57): message : 컴파일�
           ]
   VertexBuffer.cpp
   VertexData.cpp
+  코드를 생성하고 있습니다...
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_win32.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  tinyxml2.cpp
   코드를 생성하고 있습니다...
   Engine.vcxproj -> C:\Users\user\source\repos\DX\dx11_2\Libraries\Lib\Engine\Engine.lib
