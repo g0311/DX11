@@ -102,6 +102,12 @@
     <ClCompile Include="19. InstancingDemo.cpp">
       <Filter>Game\Week3</Filter>
     </ClCompile>
+    <ClCompile Include="20. MeshInstancingDemo.cpp">
+      <Filter>Game\Week3</Filter>
+    </ClCompile>
+    <ClCompile Include="21. ModelInstancingDemo.cpp">
+      <Filter>Game\Week3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -170,6 +176,12 @@
     <ClInclude Include="19. InstancingDemo.h">
       <Filter>Game\Week3</Filter>
     </ClInclude>
+    <ClInclude Include="20. MeshInstancingDemo.h">
+      <Filter>Game\Week3</Filter>
+    </ClInclude>
+    <ClInclude Include="21. ModelInstancingDemo.h">
+      <Filter>Game\Week3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\Shaders\01. Triangle.fx">
@@ -233,6 +245,12 @@
       <Filter>Shaders\Week3</Filter>
     </FxCompile>
     <FxCompile Include="..\Shaders\19. InstancingDemo.fx">
+      <Filter>Shaders\Week3</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Shaders\20. MeshInstancingDemo.fx">
+      <Filter>Shaders\Week3</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Shaders\21. ModelInstancingDemo.fx">
       <Filter>Shaders\Week3</Filter>
     </FxCompile>
   </ItemGroup>

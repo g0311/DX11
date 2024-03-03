@@ -37,6 +37,8 @@
     <ClInclude Include="17. MaterialDemo.h" />
     <ClInclude Include="18. NormalMappingDemo.h" />
     <ClInclude Include="19. InstancingDemo.h" />
+    <ClInclude Include="20. MeshInstancingDemo.h" />
+    <ClInclude Include="21. ModelInstancingDemo.h" />
     <ClInclude Include="CameraScript.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="pch.h" />
@@ -61,6 +63,8 @@
     <ClCompile Include="17. MaterialDemo.cpp" />
     <ClCompile Include="18. NormalMappingDemo.cpp" />
     <ClCompile Include="19. InstancingDemo.cpp" />
+    <ClCompile Include="20. MeshInstancingDemo.cpp" />
+    <ClCompile Include="21. ModelInstancingDemo.cpp" />
     <ClCompile Include="CameraScript.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp">
@@ -111,6 +115,8 @@
     <FxCompile Include="..\Shaders\17. TweenDemo.fx" />
     <FxCompile Include="..\Shaders\18. SkyDemo.fx" />
     <FxCompile Include="..\Shaders\19. InstancingDemo.fx" />
+    <FxCompile Include="..\Shaders\20. MeshInstancingDemo.fx" />
+    <FxCompile Include="..\Shaders\21. ModelInstancingDemo.fx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

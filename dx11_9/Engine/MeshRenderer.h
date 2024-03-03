@@ -12,19 +12,21 @@ public:
 	MeshRenderer();
 	virtual ~MeshRenderer();
 
-	virtual void Update() override;
+	//virtual void Update() override; 렌더인스턴싱이 호출 되어 렌더 (업데이트 삭제)
 
 	void SetMesh(shared_ptr<Mesh> mesh) { _mesh = mesh; }
 	void SetMaterial(shared_ptr<Material> material) { _material = material; }
-	
-	//Legacy
-	void SetTexture(shared_ptr<Texture> texture) {}
-	void SetShader(shared_ptr<Shader> shader) {}
+	void SetPass(uint8 pass) { _pass = pass; }
+
+	void SetShader(shared_ptr<Shader> shader) { return; }
+	void SetTexture(shared_ptr<Texture> texture) { return; }
+
+	void RenderInstancing(shared_ptr<class InstancingBuffer>& buffer);
+	InstanceID GetInstanceID();
 
 private:
 	shared_ptr<Mesh> _mesh;
 	shared_ptr<Material> _material;
-	//shared_ptr<Texture> _texture;
-	//shared_ptr<Shader> _shader;
+	uint8 _pass = 0;
 };
 

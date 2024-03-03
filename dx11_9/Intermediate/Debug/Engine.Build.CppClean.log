@@ -2,13 +2,13 @@ c:\users\user\source\repos\dx\dx11_2\intermediate\debug\engine.pch
 c:\users\user\source\repos\dx\dx11_2\libraries\lib\engine\engine.pdb
 c:\users\user\source\repos\dx\dx11_2\libraries\lib\engine\engine.idb
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\pch.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelmesh.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelanimator.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelanimation.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\model.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\meshrenderer.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\mesh.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\material.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\instancingmanager.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\instancingbuffer.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\inputmanager.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\indexbuffer.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imguimanager.obj
@@ -37,6 +37,8 @@ c:\users\user\source\repos\dx\dx11_2\intermediate\debug\rendermanager.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\pass.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\monobehaviour.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelrenderer.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelmesh.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\modelanimator.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\tinyxml2.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui_widgets.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\imgui_tables.obj
@@ -65,6 +67,8 @@ c:\users\user\source\repos\dx\dx11_2\intermediate\debug\16. lightingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\17. materialdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\18. normalmappingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\19. instancingdemo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\20. meshinstancingdemo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\21. modelinstancingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\camerascript.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\main.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\client.ilk

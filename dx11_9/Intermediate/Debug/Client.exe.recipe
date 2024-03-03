@@ -69,6 +69,12 @@
     <ContentFile>
       <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\19. InstancingDemo.cso</FullPath>
     </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\20. MeshInstancingDemo.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\21. ModelInstancingDemo.cso</FullPath>
+    </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />

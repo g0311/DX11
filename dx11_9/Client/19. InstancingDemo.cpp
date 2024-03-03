@@ -85,7 +85,7 @@ void InstancingDemo::Update()
 	//{
 	//	obj->Update();
 	//}
-	
+		
 	_material->Update();
 
 	{
