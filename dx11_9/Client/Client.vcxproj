@@ -39,6 +39,8 @@
     <ClInclude Include="19. InstancingDemo.h" />
     <ClInclude Include="20. MeshInstancingDemo.h" />
     <ClInclude Include="21. ModelInstancingDemo.h" />
+    <ClInclude Include="22. AnimInstancingDemo.h" />
+    <ClInclude Include="23. RenderDemo.h" />
     <ClInclude Include="CameraScript.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="pch.h" />
@@ -65,6 +67,8 @@
     <ClCompile Include="19. InstancingDemo.cpp" />
     <ClCompile Include="20. MeshInstancingDemo.cpp" />
     <ClCompile Include="21. ModelInstancingDemo.cpp" />
+    <ClCompile Include="22. AnimInstancingDemo.cpp" />
+    <ClCompile Include="23. RenderDemo.cpp" />
     <ClCompile Include="CameraScript.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp">
@@ -78,6 +82,7 @@
   <ItemGroup>
     <FxCompile Include="..\Shaders\00. Global.fx" />
     <FxCompile Include="..\Shaders\00. Light.fx" />
+    <FxCompile Include="..\Shaders\00. Render.fx" />
     <FxCompile Include="..\Shaders\01. Triangle.fx">
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
@@ -117,6 +122,8 @@
     <FxCompile Include="..\Shaders\19. InstancingDemo.fx" />
     <FxCompile Include="..\Shaders\20. MeshInstancingDemo.fx" />
     <FxCompile Include="..\Shaders\21. ModelInstancingDemo.fx" />
+    <FxCompile Include="..\Shaders\22. AnimInstancingDemo.fx" />
+    <FxCompile Include="..\Shaders\23. RenderDemo.fx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

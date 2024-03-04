@@ -10,6 +10,7 @@ void InstancingManager::Render(vector<shared_ptr<GameObject>>& gameObjects)
 	ClearData();
 	RenderMeshRenderer(gameObjects);
 	RenderModelRenderer(gameObjects);
+	RenderAnimRenderer(gameObjects);
 }
 
 void InstancingManager::ClearData()
@@ -96,6 +97,53 @@ void InstancingManager::RenderModelRenderer(vector<shared_ptr<GameObject>>& game
 			//마지막
 			shared_ptr<InstancingBuffer>& buffer = _buffers[instanceId];
 			vec[0]->GetModelRenderer()->RenderInstancing(buffer);
+		}
+	}//id 같은 애들 한개씩 그리기
+}
+
+void InstancingManager::RenderAnimRenderer(vector<shared_ptr<GameObject>>& gameObjects)
+{
+	map<InstanceID, vector<shared_ptr<GameObject>>> cache;
+
+	//id 분류 작업
+	for (shared_ptr<GameObject>& gameObject : gameObjects)
+	{
+		if (gameObject->GetModelAnimator() == nullptr)
+			continue;
+
+		const InstanceID instanceId = gameObject->GetModelAnimator()->GetInstanceID();
+		cache[instanceId].push_back(gameObject);
+	}//id 같은 애들끼리 모으기
+
+	for (auto& pair : cache)
+	{
+		const vector<shared_ptr<GameObject>>& vec = pair.second;
+
+		shared_ptr<InstancedTweenDesc> tweenDesc = make_shared<InstancedTweenDesc>();
+		/*if (vec.size() == 1)
+		{
+
+		}
+		else*/
+		{
+			const InstanceID instanceId = pair.first;
+			for (int32 i = 0; i < vec.size(); i++)
+			{
+				const shared_ptr<GameObject>& gameObject = vec[i];
+				InstancingData data;
+				data.world = gameObject->GetTransform()->GetWorldMatrix();
+
+				AddData(instanceId, data);
+
+				//INSTANCING
+				gameObject->GetModelAnimator()->UpdateTweenData();
+				TweenDesc& desc = gameObject->GetModelAnimator()->GetTweenDesc();
+				tweenDesc->tweens[i] = desc;
+			}
+			//마지막
+			RENDER->PushTweenData(*tweenDesc.get());
+			shared_ptr<InstancingBuffer>& buffer = _buffers[instanceId];
+			vec[0]->GetModelAnimator()->RenderInstancing(buffer);
 		}
 	}//id 같은 애들 한개씩 그리기
 }

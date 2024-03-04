@@ -1,11 +1,12 @@
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\vc142.pdb
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\vc142.idb
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\01. triangledemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\camerascript.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\client.pch
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\pch.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\21. modelinstancingdemo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\20. meshinstancingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\19. instancingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\18. normalmappingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\17. materialdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\02. quaddemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\16. lightingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\15. emissivedemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\14. speculardemo.obj
@@ -14,16 +15,18 @@ c:\users\user\source\repos\dx\dx11_2\intermediate\debug\12. ambientdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\11. depthstencildemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\10. globaltestdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\09. meshdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\20. meshinstancingdemo.obj
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\client.pch
-c:\users\user\source\repos\dx\dx11_2\intermediate\debug\pch.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\08. normaldemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\07. heightmapdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\06. samplingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\05. texturedemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\04. camerademo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\03. constbufferdemo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\02. quaddemo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\01. triangledemo.obj
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\main.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\camerascript.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\23. renderdemo.obj
+c:\users\user\source\repos\dx\dx11_2\intermediate\debug\22. animinstancingdemo.obj
 c:\users\user\source\repos\dx\dx11_2\binaries\00. global.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\00. light.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\01. triangle.cso
@@ -46,6 +49,10 @@ c:\users\user\source\repos\dx\dx11_2\binaries\17. tweendemo.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\18. skydemo.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\19. instancingdemo.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\20. meshinstancingdemo.cso
+c:\users\user\source\repos\dx\dx11_2\binaries\21. modelinstancingdemo.cso
+c:\users\user\source\repos\dx\dx11_2\binaries\22. animinstancingdemo.cso
+c:\users\user\source\repos\dx\dx11_2\binaries\00. render.cso
+c:\users\user\source\repos\dx\dx11_2\binaries\23. renderdemo.cso
 c:\users\user\source\repos\dx\dx11_2\binaries\client.exe
 c:\users\user\source\repos\dx\dx11_2\intermediate\debug\client.ilk
 c:\users\user\source\repos\dx\dx11_2\binaries\client.pdb
