@@ -178,8 +178,10 @@ MeshOutput VS_Animation(VertexModel input)
 	output.position = mul(output.position, VP);
 
 	output.uv = input.uv;
-	output.normal = mul(input.normal, (float3x3)input.world);
-	output.tangent = mul(input.tangent, (float3x3)input.world);
+	output.normal = mul(input.normal, (float3x3)m);
+	output.normal = mul(output.normal, (float3x3)input.world);
+	output.tangent = mul(input.tangent, (float3x3)m);
+	output.tangent = mul(output.tangent, (float3x3)input.world);
 
 	return output;
 }
