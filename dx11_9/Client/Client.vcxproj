@@ -41,6 +41,7 @@
     <ClInclude Include="21. ModelInstancingDemo.h" />
     <ClInclude Include="22. AnimInstancingDemo.h" />
     <ClInclude Include="23. RenderDemo.h" />
+    <ClInclude Include="24. SceneDemo.h" />
     <ClInclude Include="CameraScript.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="pch.h" />
@@ -69,6 +70,7 @@
     <ClCompile Include="21. ModelInstancingDemo.cpp" />
     <ClCompile Include="22. AnimInstancingDemo.cpp" />
     <ClCompile Include="23. RenderDemo.cpp" />
+    <ClCompile Include="24. SceneDemo.cpp" />
     <ClCompile Include="CameraScript.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp">

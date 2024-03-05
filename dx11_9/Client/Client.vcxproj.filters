@@ -114,6 +114,9 @@
     <ClCompile Include="23. RenderDemo.cpp">
       <Filter>Game\Week3</Filter>
     </ClCompile>
+    <ClCompile Include="24. SceneDemo.cpp">
+      <Filter>Game\Week3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -192,6 +195,9 @@
       <Filter>Game\Week3</Filter>
     </ClInclude>
     <ClInclude Include="23. RenderDemo.h">
+      <Filter>Game\Week3</Filter>
+    </ClInclude>
+    <ClInclude Include="24. SceneDemo.h">
       <Filter>Game\Week3</Filter>
     </ClInclude>
   </ItemGroup>

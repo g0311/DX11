@@ -19,6 +19,8 @@ WPARAM Game::Run(GameDesc& desc)
 	TIME->Init();
 	INPUT->Init(_desc.hWnd);
 	GUI->Init();
+	RESOURCES->Init();
+
 
 	_desc.app->Init();
 
@@ -107,6 +109,8 @@ void Game::Update()
 	ShowUpdate();
 
 	GRAPHICS->RenderBegin();
+
+	SCENE->Update();
 
 	GUI->Update();
 	_desc.app->Update();
