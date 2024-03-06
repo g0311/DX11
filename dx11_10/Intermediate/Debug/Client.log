@@ -1,0 +1,31 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(C:\Users\user\source\repos\DX\dx11_2\Intermediate\Debug\)에 다른 프로젝트(AssimpTool.vcxproj, Engine.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  StructuredBufferDemo.cpp
+C:\Users\user\source\repos\DX\dx11_2\Libraries\Include\Engine\Model.h(28,29): warning C4267: 'return': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(135,1): warning C4267: '인수': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(134): message : 컴파일되는 함수 템플릿 인스턴스화 '_Ty *std::construct_at<_Ty,DirectX::SimpleMath::Matrix*,unsigned __int64,int,unsigned __int64,int,void>(_Ty *const ,DirectX::SimpleMath::Matrix *&&,unsigned __int64 &&,int &&,unsigned __int64 &&,int &&) noexcept(<expr>)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=StructuredBuffer
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(2006): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::_Construct_in_place<_Ty,DirectX::SimpleMath::Matrix*,unsigned __int64,int,unsigned __int64,int>(_Ty &,DirectX::SimpleMath::Matrix *&&,unsigned __int64 &&,int &&,unsigned __int64 &&,int &&) noexcept(false)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=StructuredBuffer
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(2725): message : 컴파일되는 함수 템플릿 인스턴스화 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<DirectX::SimpleMath::Matrix*,unsigned __int64,int,unsigned __int64,int>(DirectX::SimpleMath::Matrix *&&,unsigned __int64 &&,int &&,unsigned __int64 &&,int &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=StructuredBuffer
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(2726): message : 컴파일되는 함수 템플릿 인스턴스화 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<DirectX::SimpleMath::Matrix*,unsigned __int64,int,unsigned __int64,int>(DirectX::SimpleMath::Matrix *&&,unsigned __int64 &&,int &&,unsigned __int64 &&,int &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=StructuredBuffer
+          ]
+C:\Users\user\source\repos\DX\dx11_2\Client\StructuredBufferDemo.cpp(21): message : 컴파일되는 함수 템플릿 인스턴스화 'std::shared_ptr<StructuredBuffer> std::make_shared<StructuredBuffer,_Ty*,size_t,int,size_t,int>(_Ty *&&,size_t &&,int &&,size_t &&,int &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=Matrix
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(142,1): warning C4267: '인수': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Client.vcxproj -> C:\Users\user\source\repos\DX\dx11_2\Binaries\Client.exe
