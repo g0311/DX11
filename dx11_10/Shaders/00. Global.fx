@@ -1,9 +1,9 @@
 #ifndef _GLOBAL_FX_
 #define _GLOBAL_FX_
 
-/////////////////////
-/////ConstBuffer/////
-/////////////////////
+/////////////////
+// ConstBuffer //
+/////////////////
 
 cbuffer GlobalBuffer
 {
@@ -18,9 +18,9 @@ cbuffer TransformBuffer
 	matrix W;
 };
 
-////////////////////
-/////VertexData/////
-////////////////////
+////////////////
+// VertexData //
+////////////////
 
 struct Vertex
 {
@@ -35,8 +35,8 @@ struct VertexTexture
 
 struct VertexColor
 {
-	float4 position : POSITION;
-	float4 color : COLOR;
+	float4 Position : POSITION;
+	float4 Color : COLOR;
 };
 
 struct VertexTextureNormal
@@ -64,9 +64,9 @@ struct VertexTextureNormalTangentBlend
 	float4 blendWeights : BLEND_WEIGHTS;
 };
 
-//////////////////////
-/////VertexOutput/////
-//////////////////////
+//////////////////
+// VertexOutput //
+//////////////////
 
 struct VertexOutput
 {
@@ -78,15 +78,15 @@ struct VertexOutput
 struct MeshOutput
 {
 	float4 position : SV_POSITION;
-	float3 worldPosition : POSITION1; //조명 연산에 필요
+	float3 worldPosition : POSITION1;
 	float2 uv : TEXCOORD;
 	float3 normal : NORMAL;
 	float3 tangent : TANGENT;
 };
 
-//////////////////////
-/////SamplerState/////
-//////////////////////
+//////////////////
+// SamplerState //
+//////////////////
 
 SamplerState LinearSampler
 {
@@ -102,30 +102,99 @@ SamplerState PointSampler
 	AddressV = Wrap;
 };
 
-/////////////////////////
-/////RasterizerState/////
-/////////////////////////
+/////////////////////
+// RasterizerState //
+/////////////////////
 
 RasterizerState FillModeWireFrame
 {
-	Fillmode = WireFrame;
+	FillMode = WireFrame;
 };
 
-RasterizerState FrontCounterClockwiseTrue // 앞 방향 설정 (시계 or 반시계)
+RasterizerState FrontCounterClockwiseTrue
 {
 	FrontCounterClockwise = true;
 };
 
-///////////////
-/////Macro/////
-///////////////
+
+////////////////
+// BlendState //
+////////////////
+
+BlendState AlphaBlend
+{
+	AlphaToCoverageEnable = false;
+
+	BlendEnable[0] = true;
+	SrcBlend[0] = SRC_ALPHA;
+	DestBlend[0] = INV_SRC_ALPHA;
+	BlendOp[0] = ADD;
+
+	SrcBlendAlpha[0] = One;
+	DestBlendAlpha[0] = Zero;
+	BlendOpAlpha[0] = Add;
+
+	RenderTargetWriteMask[0] = 15;
+};
+
+BlendState AlphaBlendAlphaToCoverageEnable
+{
+	AlphaToCoverageEnable = true;
+
+	BlendEnable[0] = true;
+	SrcBlend[0] = SRC_ALPHA;
+	DestBlend[0] = INV_SRC_ALPHA;
+	BlendOp[0] = ADD;
+
+	SrcBlendAlpha[0] = One;
+	DestBlendAlpha[0] = Zero;
+	BlendOpAlpha[0] = Add;
+
+	RenderTargetWriteMask[0] = 15;
+};
+
+BlendState AdditiveBlend
+{
+	AlphaToCoverageEnable = true;
+
+	BlendEnable[0] = true;
+	SrcBlend[0] = One;
+	DestBlend[0] = One;
+	BlendOp[0] = ADD;
+
+	SrcBlendAlpha[0] = One;
+	DestBlendAlpha[0] = Zero;
+	BlendOpAlpha[0] = Add;
+
+	RenderTargetWriteMask[0] = 15;
+};
+
+BlendState AdditiveBlendAlphaToCoverageEnable
+{
+	AlphaToCoverageEnable = true;
+
+	BlendEnable[0] = true;
+	SrcBlend[0] = One;
+	DestBlend[0] = One;
+	BlendOp[0] = ADD;
+
+	SrcBlendAlpha[0] = One;
+	DestBlendAlpha[0] = Zero;
+	BlendOpAlpha[0] = Add;
+
+	RenderTargetWriteMask[0] = 15;
+};
+
+///////////
+// Macro //
+///////////
 
 #define PASS_VP(name, vs, ps)						\
 pass name											\
 {													\
 	SetVertexShader(CompileShader(vs_5_0, vs()));	\
 	SetPixelShader(CompileShader(ps_5_0, ps()));	\
-}													
+}
 
 #define PASS_RS_VP(name, rs, vs, ps)				\
 pass name											\
@@ -135,9 +204,17 @@ pass name											\
     SetPixelShader(CompileShader(ps_5_0, ps()));	\
 }
 
-//////////////////
-/////Function/////
-//////////////////
+#define PASS_BS_VP(name, bs, vs, ps)				\
+pass name											\
+{													\
+	SetBlendState(bs, float4(0, 0, 0, 0), 0xFF);	\
+    SetVertexShader(CompileShader(vs_5_0, vs()));	\
+    SetPixelShader(CompileShader(ps_5_0, ps()));	\
+}
+
+//////////////
+// Function //
+//////////////
 
 float3 CameraPosition()
 {
@@ -145,3 +222,4 @@ float3 CameraPosition()
 }
 
 #endif
+

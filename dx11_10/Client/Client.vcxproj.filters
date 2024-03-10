@@ -28,6 +28,12 @@
     <Filter Include="Shaders\Week4">
       <UniqueIdentifier>{e4715f4c-c6cb-4814-b954-b137ac459fb9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\Week3">
+      <UniqueIdentifier>{a662f80f-cd4b-4fad-91bc-af762590e915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Legacy">
+      <UniqueIdentifier>{1faea05a-ed81-4f72-96f1-430e5f164926}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -39,20 +45,38 @@
     <ClCompile Include="CameraScript.cpp">
       <Filter>Main\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="SceneDemo.cpp">
-      <Filter>Game</Filter>
+    <ClCompile Include="CollisionDemo.cpp">
+      <Filter>Game\Week3</Filter>
     </ClCompile>
-    <ClCompile Include="RawBufferDemo.cpp">
-      <Filter>Game</Filter>
+    <ClCompile Include="OrthographicDemo.cpp">
+      <Filter>Game\Week3</Filter>
     </ClCompile>
     <ClCompile Include="GroupDemo.cpp">
-      <Filter>Game</Filter>
+      <Filter>Game\Legacy</Filter>
     </ClCompile>
-    <ClCompile Include="TextureBufferDemo.cpp">
-      <Filter>Game</Filter>
+    <ClCompile Include="RawBufferDemo.cpp">
+      <Filter>Game\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDemo.cpp">
+      <Filter>Game\Legacy</Filter>
     </ClCompile>
     <ClCompile Include="StructuredBufferDemo.cpp">
-      <Filter>Game</Filter>
+      <Filter>Game\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureBufferDemo.cpp">
+      <Filter>Game\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewportDemo.cpp">
+      <Filter>Game\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonDemo.cpp">
+      <Filter>Game\Week3</Filter>
+    </ClCompile>
+    <ClCompile Include="BillBoardDemo.cpp">
+      <Filter>Game\Week3</Filter>
+    </ClCompile>
+    <ClCompile Include="SnowDemo.cpp">
+      <Filter>Game\Week3</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -65,20 +89,38 @@
     <ClInclude Include="CameraScript.h">
       <Filter>Main\Camera</Filter>
     </ClInclude>
-    <ClInclude Include="SceneDemo.h">
-      <Filter>Game</Filter>
+    <ClInclude Include="CollisionDemo.h">
+      <Filter>Game\Week3</Filter>
     </ClInclude>
-    <ClInclude Include="RawBufferDemo.h">
-      <Filter>Game</Filter>
+    <ClInclude Include="OrthographicDemo.h">
+      <Filter>Game\Week3</Filter>
     </ClInclude>
     <ClInclude Include="GroupDemo.h">
-      <Filter>Game</Filter>
+      <Filter>Game\Legacy</Filter>
     </ClInclude>
-    <ClInclude Include="TextureBufferDemo.h">
-      <Filter>Game</Filter>
+    <ClInclude Include="RawBufferDemo.h">
+      <Filter>Game\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDemo.h">
+      <Filter>Game\Legacy</Filter>
     </ClInclude>
     <ClInclude Include="StructuredBufferDemo.h">
-      <Filter>Game</Filter>
+      <Filter>Game\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureBufferDemo.h">
+      <Filter>Game\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewportDemo.h">
+      <Filter>Game\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonDemo.h">
+      <Filter>Game\Week3</Filter>
+    </ClInclude>
+    <ClInclude Include="BillBoardDemo.h">
+      <Filter>Game\Week3</Filter>
+    </ClInclude>
+    <ClInclude Include="SnowDemo.h">
+      <Filter>Game\Week3</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +212,12 @@
       <Filter>Shaders\Week4</Filter>
     </FxCompile>
     <FxCompile Include="..\Shaders\27. StructuredBufferDemo.fx">
+      <Filter>Shaders\Week4</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Shaders\28. BillboardDemo.fx">
+      <Filter>Shaders\Week4</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Shaders\29. SnowDemo.fx">
       <Filter>Shaders\Week4</Filter>
     </FxCompile>
   </ItemGroup>

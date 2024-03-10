@@ -26,7 +26,8 @@ void Material::Update()
 		return;
 
 	//머티리얼 버퍼 지정 (인자 값 삽입) //머티리얼 빛 합성 색
-	RENDER->PushMaterialData(_desc);
+	//RENDER->PushMaterialData(_desc);
+	_shader->PushMaterialData(_desc);
 
 	//텍스쳐 설정 //머티리얼 각각마다 값이 존재
 	if (_diffuseMap)

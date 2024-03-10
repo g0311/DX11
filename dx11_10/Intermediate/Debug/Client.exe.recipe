@@ -96,6 +96,12 @@
     <ContentFile>
       <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\27. StructuredBufferDemo.cso</FullPath>
     </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\28. BillboardDemo.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\user\source\repos\DX\dx11_2\Binaries\29. SnowDemo.cso</FullPath>
+    </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />

@@ -1,8 +1,38 @@
 #include "pch.h"
 #include "Camera.h"
+#include "Scene.h"
 
 Matrix Camera::S_MatView = Matrix::Identity;
 Matrix Camera::S_MatProjection = Matrix::Identity;
+
+void Camera::SortGameObject()
+{
+	shared_ptr<Scene> scene = CUR_SCENE;
+	unordered_set<shared_ptr<GameObject>>& gameObjects = scene->GetObjects();
+
+	_vecForward.clear();
+
+	for (auto& gameObject : gameObjects)
+	{
+		if (IsCulled(gameObject->GetLayerIndex()))
+			continue;
+
+		if (gameObject->GetMeshRenderer() == nullptr
+			&& gameObject->GetModelRenderer() == nullptr
+			&& gameObject->GetModelAnimator() == nullptr)
+			continue;
+
+		_vecForward.push_back(gameObject);
+	}
+}
+
+void Camera::Render_Forward()
+{
+	S_MatView = _matView;
+	S_MatProjection = _matProjection;
+
+	GET_SINGLE(InstancingManager)->Render(_vecForward);
+}
 
 Camera::Camera() : Super(ComponentType::Camera)
 {
@@ -18,7 +48,7 @@ Camera::~Camera()
 void Camera::LateUpdate()
 {
 	UpdateMatrix();
-	RENDER->PushGlobalData(Camera::S_MatView, Camera::S_MatProjection);
+	//RENDER->PushGlobalData(Camera::S_MatView, Camera::S_MatProjection);
 }
 
 void Camera::UpdateMatrix()
@@ -26,9 +56,11 @@ void Camera::UpdateMatrix()
 	Vec3 eyePosition = GetTransform()->GetPosition();
 	Vec3 focusPosition = eyePosition + GetTransform()->GetLook();
 	Vec3 upDirection = GetTransform()->GetUp();
-	S_MatView = ::XMMatrixLookAtLH(eyePosition, focusPosition, upDirection);
-
+	_matView = ::XMMatrixLookAtLH(eyePosition, focusPosition, upDirection);
 	//S_MatView = GetTransform()->GetWorldMatrix().Invert();
 
-	S_MatProjection = ::XMMatrixPerspectiveFovLH(_fov, _width / _height, _near, _far);
+	if(_type == ProjectionType::Perspective)
+		_matProjection = ::XMMatrixPerspectiveFovLH(_fov, _width / _height, _near, _far);
+	else
+		_matProjection = ::XMMatrixOrthographicLH(_width, _height, _near, _far);
 }

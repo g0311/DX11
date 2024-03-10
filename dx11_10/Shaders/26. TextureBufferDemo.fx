@@ -10,7 +10,6 @@ void CS(uint3 id : SV_DispatchThreadID)
 	//Output[id] = color;
 	Output[id] = 1.0f - color;
 	//Output[id] = (color.r + color.g + color.b) / 3.0f;
-
 }
 
 technique11 T0

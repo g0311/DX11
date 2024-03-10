@@ -7,11 +7,6 @@
 /////Struct/////
 ////////////////
 
-struct Color
-{
-
-};
-
 struct LightDesc
 {
 	float4 ambient;

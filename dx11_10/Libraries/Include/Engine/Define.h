@@ -21,8 +21,13 @@ public:										\
 #define TIME		GET_SINGLE(TimeManager)
 #define DT			TIME->GetDeltaTime()
 #define RESOURCES	GET_SINGLE(ResourceManager)
-#define RENDER		GET_SINGLE(RenderManager)
 #define INSTANCING	GET_SINGLE(InstancingManager)
 #define GUI			GET_SINGLE(ImGuiManager)
 #define SCENE		GET_SINGLE(SceneManager)
 #define CUR_SCENE	SCENE->GetCurrentScene()
+
+enum LayerMask
+{
+	Layer_Default = 0,
+	Layer_UI = 1,
+};

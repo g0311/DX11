@@ -1,5 +1,10 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(C:\Users\user\source\repos\DX\dx11_2\Intermediate\Debug\)에 다른 프로젝트(AssimpTool.vcxproj, Client.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  C:\Users\user\source\repos\DX\dx11_2\Engine\AABBBoxCollider.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\BaseCollider.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\Billboard.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\BindShaderDesc.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\Button.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Camera.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Component.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\ConstantBuffer.h
@@ -27,6 +32,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\
   C:\Users\user\source\repos\DX\dx11_2\Engine\InstancingManager.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Light.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Material.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\MathUtils.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Mesh.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\MeshRenderer.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Model.h
@@ -35,18 +41,22 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\
   C:\Users\user\source\repos\DX\dx11_2\Engine\ModelMesh.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\ModelRenderer.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\MonoBehaviour.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\OBBBoxCollider.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Pass.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\pch.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\Primitive3D.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\RawBuffer.h
-  C:\Users\user\source\repos\DX\dx11_2\Engine\RenderManager.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\ResourceBase.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\ResourceManager.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Scene.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\SceneManager.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Shader.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\SimpleMath.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\SnowBillboard.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\SphereCollider.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\StructuredBuffer.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Technique.h
+  C:\Users\user\source\repos\DX\dx11_2\Engine\Terrain.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\Texture.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\TextureBuffer.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\TimeManager.h
@@ -56,7 +66,8 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\
   C:\Users\user\source\repos\DX\dx11_2\Engine\Utils.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\VertexBuffer.h
   C:\Users\user\source\repos\DX\dx11_2\Engine\VertexData.h
-  56개 파일이 복사되었습니다.
+  C:\Users\user\source\repos\DX\dx11_2\Engine\Viewport.h
+  67개 파일이 복사되었습니다.
   C:\Users\user\source\repos\DX\dx11_2\Engine\SimpleMath.inl
   1개 파일이 복사되었습니다.
   pch.cpp
@@ -65,6 +76,14 @@ C:\Users\user\source\repos\DX\dx11_2\Engine\ResourceBase.h(5,11): warning C4369:
 C:\Users\user\source\repos\DX\dx11_2\Engine\ResourceBase.h(6,6): warning C4340: 'Mesh': 양의 값에서 음의 값으로 값이 래핑되었습니다.
 C:\Users\user\source\repos\DX\dx11_2\Engine\ResourceBase.h(6,2): warning C4309: '초기화 중': 상수 값이 잘립니다.
 C:\Users\user\source\repos\DX\dx11_2\Engine\ResourceBase.h(6,6): warning C4369: 'ResourceType::Mesh':  열거자 값 '256'을(를) 'unsigned char'(으)로 나타낼 수 없습니다. 값은 '0'입니다.
+  AABBBoxCollider.cpp
+  BaseCollider.cpp
+  Billboard.cpp
+  Button.cpp
+C:\Users\user\source\repos\DX\dx11_2\Engine\Button.cpp(47,27): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\Button.cpp(48,28): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\Button.cpp(49,26): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\Button.cpp(50,29): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Camera.cpp
   Component.cpp
   ConstantBuffer.cpp
@@ -78,8 +97,8 @@ C:\Users\user\source\repos\DX\dx11_2\Engine\Game.cpp(69,46): warning C4244: '초
   Geometry.cpp
   GeometryHelper.cpp
   Graphics.cpp
-C:\Users\user\source\repos\DX\dx11_2\Engine\Graphics.cpp(34,46): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\user\source\repos\DX\dx11_2\Engine\Graphics.cpp(35,47): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\Graphics.cpp(36,46): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\Graphics.cpp(37,47): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   IExecute.cpp
   ImGuiManager.cpp
   IndexBuffer.cpp
@@ -87,34 +106,47 @@ C:\Users\user\source\repos\DX\dx11_2\Engine\Graphics.cpp(35,47): warning C4244: 
   InstancingBuffer.cpp
   InstancingManager.cpp
   Light.cpp
+  코드를 생성하고 있습니다...
+C:\Users\user\source\repos\DX\dx11_2\Engine\Game.cpp(102): warning C4715: 'Game::WndProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\AABBBoxCollider.cpp(39): warning C4715: 'AABBBoxCollider::Intersects': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  컴파일하고 있습니다...
   Material.cpp
+  MathUtils.cpp
   Mesh.cpp
   MeshRenderer.cpp
   Model.cpp
 C:\Users\user\source\repos\DX\dx11_2\Engine\Model.h(28,29): warning C4267: 'return': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  코드를 생성하고 있습니다...
-C:\Users\user\source\repos\DX\dx11_2\Engine\Game.cpp(102): warning C4715: 'Game::WndProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  컴파일하고 있습니다...
   ModelAnimation.cpp
   ModelAnimator.cpp
 C:\Users\user\source\repos\DX\dx11_2\Engine\Model.h(28,29): warning C4267: 'return': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\user\source\repos\DX\dx11_2\Engine\ModelAnimator.cpp(13,35): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\ModelAnimator.cpp(15,35): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   ModelMesh.cpp
   ModelRenderer.cpp
 C:\Users\user\source\repos\DX\dx11_2\Engine\Model.h(28,29): warning C4267: 'return': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   MonoBehaviour.cpp
+  OBBBoxCollider.cpp
   Pass.cpp
+  Primitive3D.cpp
   RawBuffer.cpp
-  RenderManager.cpp
+  BindShaderDesc.cpp
   ResourceBase.cpp
   ResourceManager.cpp
   Scene.cpp
   SceneManager.cpp
   Shader.cpp
 C:\Users\user\source\repos\DX\dx11_2\Engine\Shader.cpp(166,3): warning C4267: '인수': 'size_t'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
   SimpleMath.cpp
+  SnowBillboard.cpp
+  SphereCollider.cpp
   StructuredBuffer.cpp
   Technique.cpp
+  Terrain.cpp
+C:\Users\user\source\repos\DX\dx11_2\Engine\Terrain.cpp(44,38): warning C4244: '인수': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\Terrain.cpp(44,29): warning C4244: '인수': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\Terrain.cpp(45,38): warning C4244: '인수': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\DX\dx11_2\Engine\Terrain.cpp(45,29): warning C4244: '인수': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Texture.cpp
 C:\Users\user\source\repos\DX\dx11_2\Engine\Texture.cpp(23,14): warning C4244: '=': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\user\source\repos\DX\dx11_2\Engine\Texture.cpp(24,14): warning C4244: '=': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
@@ -124,8 +156,6 @@ C:\Users\user\source\repos\DX\dx11_2\Engine\Texture.cpp(24,14): warning C4244: '
 C:\Users\user\source\repos\DX\dx11_2\Engine\Transform.cpp(29,23): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\user\source\repos\DX\dx11_2\Engine\Transform.cpp(34,40): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\user\source\repos\DX\dx11_2\Engine\Transform.cpp(39,23): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
   Utils.cpp
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2541,23): warning C4244: '인수': 'wchar_t'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
@@ -168,6 +198,7 @@ C:\Users\user\source\repos\DX\dx11_2\Engine\Utils.cpp(57): message : 컴파일�
           ]
   VertexBuffer.cpp
   VertexData.cpp
+  Viewport.cpp
   코드를 생성하고 있습니다...
   imgui.cpp
   imgui_demo.cpp

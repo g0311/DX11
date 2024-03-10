@@ -12,6 +12,11 @@ enum class ComponentType : uint8
 	Camera,
 	Animator,
 	Light,
+	Collider,
+	Terrain,
+	Button,
+	BillBoard,
+	SnowBillBoard,
 	// ...
 	Script,
 

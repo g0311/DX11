@@ -4,6 +4,8 @@
 #include "ModelMesh.h"
 #include "Material.h"
 #include "ModelAnimation.h"
+#include "Camera.h"
+#include "Light.h"
 
 ModelAnimator::ModelAnimator(shared_ptr<Shader> shader)
 	: Super(ComponentType::ModelAnimator), _shader(shader)
@@ -93,6 +95,14 @@ void ModelAnimator::RenderInstancing(shared_ptr<class InstancingBuffer>& buffer)
 	if (_texture == nullptr)
 		CreateTexture();
 
+	// GlobalData
+	_shader->PushGlobalData(Camera::S_MatView, Camera::S_MatProjection);
+
+	// Light
+	auto lightObj = SCENE->GetCurrentScene()->GetLight();
+	if (lightObj)
+		_shader->PushLightData(lightObj->GetLight()->GetLightDesc());
+
 	_shader->GetSRV("TransformMap")->SetResource(_srv.Get());
 
 	//Bones
@@ -103,7 +113,7 @@ void ModelAnimator::RenderInstancing(shared_ptr<class InstancingBuffer>& buffer)
 		shared_ptr<ModelBone> bone = _model->GetBoneByIndex(i);
 		boneDesc.Transforms[i] = bone->transform;
 	}
-	RENDER->PushBoneData(boneDesc);
+	_shader->PushBoneData(boneDesc);
 
 	const auto& meshes = _model->GetMeshes();
 	for (auto& mesh : meshes)
